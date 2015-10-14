@@ -1,0 +1,296 @@
+
+/*主要*/
+html,body{
+    height:100%;
+}
+
+section{
+    height:88%;
+    overflow-y:scroll;
+}
+
+/* 头部 */
+.logo{
+    overflow:hidden;
+    float:left;
+    width:5em;
+    height: 5em;
+    margin: 0;
+}
+.logo a{
+    display:block;
+    background-image: url(../images/icon.png);
+    background-repeat:no-repeat;
+    background-size:contain;
+    width:5em;
+    height:5em;
+    text-indent:-9999px;
+}
+
+.brand{
+    float:left;
+    height:50px;
+    position:relative;
+    top:.5em;
+    color:#0099ff;
+    font-size:1.8em;
+    line-height: 1em;
+}
+.brand em{
+    color:#333;
+    font-style:normal;
+    font-weight:bold;
+    font-size:.6em;
+}
+
+.logo > em{
+    font-style: normal;
+    color:#333;
+    font-size:0.55em;
+}
+
+.top-contact{
+    padding: .2em;
+    float:right;
+    margin-right: -1em;
+    margin-top: 1.4em;
+    background-color: #0099ff;
+    color:#fff;
+    font-size:1em;
+    line-height: 1.1em;
+}
+
+.tb-telephone{
+    display:inline-block;
+    background-image:url('../images/dianhua.png');
+    background-repeat:no-repeat;
+    background-size:contain;
+    width: 1em;
+    height: 1em;
+    margin-top: 1px;
+    line-height: 1em;
+    vertical-align: text-top;
+}
+
+@media(max-width:480px){
+    .top-contact{
+        display:none;
+    }
+}
+
+/* 幻灯片 */
+
+.carousel{
+    height: 100%;
+}
+
+.carousel-inner{
+    height: 100%;
+}
+
+.carousel-inner > .item{
+    height: 100%;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.carousel-zhanwei{
+    height: 80%;
+}
+
+.carousel-caption{
+    position:relative;
+    background: transparent;
+    text-align:right;
+}
+
+
+#hero{
+    background-color:#fff;
+}
+
+.carousel-caption h1{
+    font-size:1.6em;
+    color:#0099ff;
+}
+
+.carousel-caption p{
+    font-size:1.2em;
+    color:#333;
+}
+
+@media(max-width:480px){
+    .carousel-caption{
+        position:absolute;
+    }
+    .carousel-inner > .item{
+        background-size:auto 100%;
+    }
+    .carousel{
+        height: 90%;
+    }
+}
+
+/* 讲数据 */
+#data{
+    height: 92%;
+}
+
+.section-content{
+    text-align:center;
+}
+
+.section-content p{
+    color:#000;
+}
+
+@media(min-width:480px){
+    .section-content{
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+    .data-image-row{
+        margin-top: 5em;
+    }
+    .data-image-row >.span1{
+        height:100%;
+    }
+}
+
+@media(max-width:480px){
+    .phone-img-description{
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+}
+
+/* 讲应用 */
+#app{
+    background-color:#bbb;
+    background-image:url(../images/data-bg.png);
+    background-position:70% top;
+    background-repeat:no-repeat;
+    filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
+    -moz-background-size:100% 100%;
+    background-size:cover;
+}
+
+#app .section-content{
+    margin-top: 10em;
+}
+
+@media(min-width:480px){
+    #app .section-content{
+        color:#fff;
+    }
+
+    #app .section-content p{
+        color:#fff;
+    }
+}
+
+/* 讲案例 */
+#example{
+    background-color: #e8f5ff;
+    height: 50%;
+}
+
+#example .example-image-row{
+    margin-top: 3em;
+}
+
+@media(max-width:480px){
+    #example{
+        height: auto;
+    }
+}
+
+/* 讲团队 */
+#team{
+    height:160%;
+    background-image:url(../images/18.png);
+        background-position:center bottom;
+    background-repeat:no-repeat;
+    filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
+    -moz-background-size:100% 100%;
+    background-size:100%;
+}
+
+
+.custom-wrapper {
+    background-color: #ffd390;
+    margin-bottom: 1em;
+    -webkit-font-smoothing: antialiased;
+    height: 2.1em;
+    overflow: hidden;
+    -webkit-transition: height 0.5s;
+    -moz-transition: height 0.5s;
+    -ms-transition: height 0.5s;
+    transition: height 0.5s;
+}
+
+.custom-wrapper.open {
+    height: 14em;
+}
+
+.custom-menu-3 {
+    text-align: right;
+}
+
+.custom-toggle {
+    width: 34px;
+    height: 34px;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+.custom-toggle .bar {
+    background-color: #777;
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 100px;
+    position: absolute;
+    top: 18px;
+    right: 7px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.custom-toggle .bar:first-child {
+    -webkit-transform: translateY(-6px);
+    -moz-transform: translateY(-6px);
+    -ms-transform: translateY(-6px);
+    transform: translateY(-6px);
+}
+
+.custom-toggle.x .bar {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.custom-toggle.x .bar:first-child {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+@media (max-width: 47.999em) {
+
+    .custom-menu-3 {
+        text-align: left;
+    }
+
+    .custom-toggle {
+        display: block;
+    }
+
+}
