@@ -6,7 +6,15 @@ html,body{
 
 section{
     height:88%;
-    overflow-y:scroll;
+    overflow-y:hidden;
+}
+
+@media(max-width:480px){
+    body{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
 }
 
 /* 头部 */
@@ -81,7 +89,7 @@ section{
 /* 幻灯片 */
 
 .carousel{
-    height: 100%;
+    height: 80%;
 }
 
 .carousel-inner{
@@ -133,7 +141,7 @@ section{
 
 /* 讲数据 */
 #data{
-    height: 92%;
+    height: 70%;
 }
 
 .section-content{
@@ -162,21 +170,29 @@ section{
         margin-top: 2em;
         margin-bottom: 2em;
     }
+#data{
+    height: auto;
+}
 }
 
 /* 讲应用 */
 #app{
     background-color:#bbb;
-    background-image:url(../images/data-bg.png);
+    background-image:url(../images/app-bg.png);
     background-position:70% top;
-    background-repeat:no-repeat;
+    background-repeat:repeat-x;
     filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
     -moz-background-size:100% 100%;
-    background-size:cover;
+    background-size:contain;
+}
+
+#app .app-container{
+    height: 100%;
+    background-image: url('../images/sunshine-pc.png');
 }
 
 #app .section-content{
-    margin-top: 10em;
+    margin-top: 5em;
 }
 
 @media(min-width:480px){
@@ -187,12 +203,42 @@ section{
     #app .section-content p{
         color:#fff;
     }
+
+}
+
+@media(max-width:480px){
+
+    #app{
+        height: auto;
+    }
+
+    #app .app-container{
+        background-image: url('../images/sunshine-phone.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center top;
+    }
+
+}
+
+/* 讲平台 */
+
+#platform{
+    height: auto;
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+.platform-images img{
+    margin-bottom: 1em;
 }
 
 /* 讲案例 */
 #example{
     background-color: #e8f5ff;
     height: 50%;
+    padding-top: 5em;
+    padding-bottom: 5em;
 }
 
 #example .example-image-row{
